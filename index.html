@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Global Architecture</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+		<link  rel="stylesheet" href="./src/styles.css"></link>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+		<script type="module" src="./src/main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+            <div id="map" class="map-container">
+			</div>
+			<div id="modal" class="modal-container hide">
+				<div id="background" class="translucent"></div>
+				<div class="modal-window">
+					<div class="modal-header"> 
+						<img class= "vector" src="../Assets/GCP.svg" ></img>
+						<div>
+							<h1>Cleanroom 2</h1> 
+							<div class="subtitle">
+								<p>Instance is online</p>
+								<div class="green-circle"></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-content">
+						<div class="right-panel">
+							<div class="cards-container">
+								<div class="card">
+									<img src="../Assets/Assets.svg" height="50" width="50"></img>
+									<div>
+										<h3> Assets</h3>
+										<p>2401</p>
+									</div>
+									<div>
+										<img src="../Assets/Next.svg" height="30" width="30"></img>
+									</div>
+								</div>
+								<div class="card">
+									<img src="../Assets/Users.svg" height="50" width="50"></img>
+									<div>
+										<h3> Users</h3>
+										<p>2401</p>
+									</div>
+									<div>
+										<img src="../Assets/Next.svg" height="30" width="30"></img>
+									</div>
+								</div>
+								<div class="card">
+									<img src="../Assets/Cloud.svg" height="50" width="50"></img>
+									<div>
+										<h3> Cloud Instances</h3>
+										<p>2401</p>
+									</div>
+									<div>
+										<img src="../Assets/Next.svg" height="30" width="30"></img>
+									</div>
+								</div>
+								<div class="card">
+									<img src="../Assets/Workspaces.svg" height="50" width="50"></img>
+									<div>
+										<h3> Workspaces</h3>
+										<p>2401</p>
+									</div>
+									<div>
+										<img src="../Assets/Next.svg" height="30" width="30"></img>
+									</div>
+								</div>
+							</div>
+							<div class="stats-container"></div>
+						</div>
+						<div class="activity-container">
+							<h2> Recent Activity </h2>
+							<div class="activity-entry">
+								<h4> Ignacio Alvarez</h4>
+								<p>Has onboarded a new asset to Amacai</p>
+								<div class="line"></div>
+							</div>
+							<div class="activity-entry">
+								<h4> Juan Carvajal</h4>
+								<p>Has modified asset Onboard test on Amacai</p>
+								<div class="line"></div>
+							</div>
+							<div class="activity-entry">
+								<h4> Juan Carvajal</h4>
+								<p>Has added user <b>ignacio.alvarez@team.neustar</b> to Amacai</p>
+								<div class="line"></div>
+							</div>
+							<div class="activity-entry">
+								<h4> Jhon Doe</h4>
+								<p>Has created Amacai workspace</p>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyDYljA0E_kYYeDytI36cxdRZi3Xvrt305o", v: "beta"});</script>
+	</body>
+</html>
